@@ -26,16 +26,16 @@ def start_download():
 
 # Create main window
 window = tk.Tk()
-window.title("Download Progress Simulator")
+window.title("Download Progress")
 window.geometry("400x250")
 window.resizable(False, False)
 
 # Title label
-title_label = tk.Label(window, text="Download Progress Simulation", font=("Arial", 16))
+title_label = tk.Label(window, text="Download", font=("Arial", 16))
 title_label.pack(pady=10)
 
 # Time entry
-time_label = tk.Label(window, text="Set Download Time (in seconds):")
+time_label = tk.Label(window, text="Set  Time (in seconds):")
 time_label.pack(pady=5)
 time_entry = tk.Entry(window, width=10)
 time_entry.pack()
@@ -44,7 +44,7 @@ time_entry.pack()
 progress_bar = ttk.Progressbar(window, length=300)
 progress_bar.pack(pady=20)
 
-# Progress label
+# Progress labels
 progress_label = tk.Label(window, text="0%")
 progress_label.pack()
 
